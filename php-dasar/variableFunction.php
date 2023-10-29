@@ -1,0 +1,28 @@
+<?php
+
+function foo() {
+    echo "Foo" . PHP_EOL;
+}
+
+function bar() {
+    echo "Bar" . PHP_EOL;
+}
+
+$functionYangAkanDipanggil = "foo";
+$functionYangAkanDipanggil();
+
+$functionYangAkanDipanggil = "bar";
+$functionYangAkanDipanggil();
+
+function sayHello(string $name, $filter) {
+    $finalName = $filter($name);
+    echo "hello $finalName" . PHP_EOL;
+}
+
+function sampleFunction(string $name): string {
+    return "sample $name";
+}
+
+sayHello("Amel", "sampleFunction");
+sayHello("Amel", "strtoupper");
+sayHello("Amel", "strtolower");
