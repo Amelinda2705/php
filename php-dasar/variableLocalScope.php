@@ -5,4 +5,4 @@ function createName() {
 }
 
 createName();
-//becho $name . PHP_EOL;
+// echo $name . PHP_EOL;
